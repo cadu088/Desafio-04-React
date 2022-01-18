@@ -1,7 +1,13 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-// TODO
+:root {
+    --color-pink: #FF57B2;
+    --color-black: #1A1D23;
+    --color-white: #F8F8F8;
+    --color-ice: #D7D7D7;
+    --color-gray: #BBBBBB;
+}
