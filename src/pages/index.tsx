@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
-
+import Head from 'next/head';
 import { getPrismicClient } from '../services/prismic';
-
+import Header from '../components/Header';
 import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
 
@@ -24,17 +24,35 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-export default function Home() {
-  return(
-    <div>
-      a
-    </div>
-  )
+export default function Home({ postsPagination }: HomeProps) {
+  return (
+    <>
+      <Head>
+        <title>Home | Ig.News</title>{' '}
+      </Head>
+      <main>
+        <Header />
+
+        <div>
+          {postsPagination.results.map((p, index) => (
+            <div key={p.uid}>
+              <h1>{p.data}</h1>
+              <h1>{p.data}</h1>
+            </div>
+          ))}
+        </div>
+      </main>
+    </>
+  );
 }
 
-// export const getStaticProps = async () => {
-//   // const prismic = getPrismicClient();
-//   // const postsResponse = await prismic.query(TODO);
+export const getStaticProps: GetStaticProps = async () => {
+  const prismic = getPrismicClient();
+  const postsResponse = await prismic.query('Publication', { pageSize: 2 });
 
-//   // TODO
-// };
+  console.log(postsResponse);
+
+  return {
+    props: {},
+  };
+};
