@@ -1,1 +1,48 @@
-// TODO
+.bodyHome {
+  margin: auto;
+  width: 50%;
+  height: 100%;
+
+  button {
+    background-color: transparent;
+    color: var(--color-pink);
+    border: 0;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}
+.posts {
+  margin-top: 2rem;
+  color: white;
+  background-color: var(--color-black);
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h3 {
+    color: var(--color-gray);
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+  }
+}
+.infoPosts {
+  width: 100%;
+  display: flex;
+  padding-top: 0.5rem;
+  color: var(--color-gray);
+  align-content: space-between;
+
+  h6 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 100;
+    margin-right: 1rem;
+  }
+}
+.icon {
+  margin-right: 0.25rem;
+  font-size: 1rem;
+}

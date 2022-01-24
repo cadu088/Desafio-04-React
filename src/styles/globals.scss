@@ -1,13 +1,24 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500&display=swap');
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--color-black);
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 :root {
-    --color-pink: #FF57B2;
-    --color-black: #1A1D23;
-    --color-white: #F8F8F8;
-    --color-ice: #D7D7D7;
-    --color-gray: #BBBBBB;
+  --color-pink: #ff57b2;
+  --color-black: #1a1d23;
+  --color-white: #f8f8f8;
+  --color-ice: #d7d7d7;
+  --color-gray: #bbbbbb;
 }
