@@ -1,13 +1,16 @@
 import styles from './header.module.scss';
-import Logo from '../../other/Logo.svg';
+import Link from 'next/link';
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function Header() {
   return (
     <header>
-      <div className={styles.headerImg}>
-        <img src="../../other/Logo.svg" />
-      </div>
+      <nav>
+        <Link href="/">
+          <div className={styles.headerImg}>
+            <img src="/logos/Logo.svg" alt="logo" width={300} />
+          </div>
+        </Link>
+      </nav>
     </header>
   );
 }

@@ -1,1 +1,8 @@
-// TODO
+.headerImg {
+    height: 5rem;
+    border-bottom: 1px solid var(--color-gray);
+    img {
+        margin: 1.5rem 0 0 5rem;
+        cursor: pointer;
+    }
+}

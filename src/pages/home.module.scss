@@ -1,48 +1,46 @@
-.bodyHome {
-  margin: auto;
-  width: 50%;
-  height: 100%;
-
-  button {
-    background-color: transparent;
-    color: var(--color-pink);
-    border: 0;
-    margin-top: 3rem;
-    font-size: 1.3rem;
-    cursor: pointer;
-  }
-}
 .posts {
-  margin-top: 2rem;
-  color: white;
-  background-color: var(--color-black);
-  h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  h3 {
-    color: var(--color-gray);
-    font-weight: 300;
-    font-size: 0.9rem;
-    padding-top: 0.5rem;
-  }
+    max-width: 60%;
+    margin: auto;
+    border-top: 1rem solid transparent;
+    a {
+        display: block;
+        &+a {
+            margin-top: 4rem;
+        }
+        strong {
+            color: var(--color-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        p {
+            color: var(--color-ice);
+            font-size: 1.1rem;
+            margin-top: 0.8rem;
+        }
+        >div {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            span {
+                display: flex;
+                align-items: center;
+                color: var(--color-ice);
+                svg {
+                    margin-right: 0.8rem;
+                }
+                &+span {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
 }
-.infoPosts {
-  width: 100%;
-  display: flex;
-  padding-top: 0.5rem;
-  color: var(--color-gray);
-  align-content: space-between;
 
-  h6 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-weight: 100;
-    margin-right: 1rem;
-  }
-}
-.icon {
-  margin-right: 0.25rem;
-  font-size: 1rem;
+.loadMoreButton {
+    color: var(--color-pink);
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    margin-left: 40%;
 }
